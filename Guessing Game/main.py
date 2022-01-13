@@ -1,4 +1,5 @@
 import random
+from art import logo
 
 def level(mode):
     if mode == "easy":
@@ -37,6 +38,8 @@ def guess_number():
     return int(input("Make a guess: "))
 
 def main():
+    print(logo)
+
     print("Welcome to the number Guessing Game! \nI'm thinking of a number between 1 and 100.")
     
     lives = level(input("Choose a difficulty. Type 'easy' or 'hard': "))
